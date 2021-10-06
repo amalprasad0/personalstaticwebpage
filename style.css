@@ -1,3 +1,22 @@
 .card-hover:hover {
     border-color:#136bc9;
 }
+.awesome {
+
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #1800ee;
+    }
+    
+  }
