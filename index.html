@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-primary">
+    <header class="bg-primary" style="position: fixed;width: 100%; z-index: 1;">
             <div class="row text-white ">
                 <div class="col-md-6 col-9 p-2 pl-5">
                     <h2>Amal Prasad</h2>
@@ -28,10 +28,13 @@
                               <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-white" href="#">Services</a>
+                              <a class="nav-link text-white" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact</a>
+                              <a class="nav-link text-white" href="#lang">Knowledges</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contactus">Contact</a>
                               </li>
                           </ul>
                         </div>
@@ -43,7 +46,7 @@
 
 
     </header>
-    <section class="p-4"> 
+    <section id="home section" style="padding-top:7em;"> 
        <div class="container">
          <div class="row align-items-center">
            <div class="col-md-6">
@@ -65,10 +68,10 @@
        </div>
 
     </section>
-    <section class="bg-light p-5">
+    <section class="bg-light p-5" id=lang>
       <div class="container">
         <h1 class="text-center awesome" style="font-family: sans-serif;">Knowledges</h1>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-4">
             <div class="card card border-primary" style="width: 18rem;">
               <img class="card-img-top mw-50 p-5" src="java.png" alt="Card image cap">
@@ -104,11 +107,11 @@
 
       </div>
     </section>
-    <section class="bg-white">
+    <section class="bg-white" id="projects">
       <div class="container">
         <h1 class="text-center font" style="font-family: sans-serif;">My Projects</h1>
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row align-items-center">
+          <div class="col-md-4 pl-5">
             <div class="card card border-primary" style="width: 18rem;">
               <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_VmO0Jh.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
               <div class="card-body  text-white bg-primary"  >
@@ -119,7 +122,7 @@
             </div>
           </div>
            
-          <div class="col-md-4">
+          <div class="col-md-4 pl-5">
             <div class="card card border-primary" style="width: 18rem;">
               
               <div class="card-body  text-white bg-primary"  >
@@ -131,7 +134,7 @@
               <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_rkgoywwu/`lottie_cancel/data.json"  background="transparent"  speed="1"  class="card-img-top mw-60 p-5"  loop autoplay></lottie-player>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 pl-5">
             <div class="card card border-primary" style="width: 18rem;">
               <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_eiubpejs.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
               <div class="card-body  text-white bg-primary"  >
@@ -145,7 +148,151 @@
           </div>
           
         </div>
+
+    </section>
+    <section id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!--Section: Contact v.2-->
+<section class="mb-4" >
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
       </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Chittarikkal PO,Kerala (dis),India</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+917306557354</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>amalprasad354@gmail.com.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/amal.prasad.71066">
+           <img src="facebook.png"  style="width: 25px;"
+           alt="">
+          </a>
+          <a href="https://www.instagram.com/amal_prasad0/">
+            <img src="instagram.png"  style="width: 25px;"
+            alt="">
+           </a>
+           <a href="https://ads.twitter.com/login">
+            <img src="twitter.png"  style="width: 25px;"
+            alt="">
+           </a>
+           <a href="https://github.com/amalprasad0">
+            <img src="github.png"  style="width: 25px;"
+            alt="">
+           </a>
+           <a href="https://www.linkedin.com/in/amal-prasad-821b82210/">
+            <img src="linkedin.png"  style="width: 25px;"
+            alt="">
+           </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-light p-3 bg-primary" >
+          © 2021 Copyright:
+          <a class="text-light" href="https://instagram.com/amal_prasad0">ww.amalprasadoffcial.in</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     </section>
     
     
